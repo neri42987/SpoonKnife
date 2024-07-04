@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="../../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="both">
+        <nav class="navbar-vertical">
+            <a class="nav-link" style="color: #fff;" href="#"><img src="profile.jpg" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;"></a>
+            <!-- <hr class="mt-1" style="border-top: 2px solid white; margin: 10px 0;"> -->
+            <a href="#" class="nav-link box-text" onclick="toggleSubMenu('masters')">Masters <i class="fa fa-angle-down"></i></a>
+            <div id="mastersSubMenu" class="sub-menu box-text">
+                <a href="#" class="display-area">Display Area 1</a>
+                <a href="#" class="display-area">Display Area 2</a>
+                <a href="#" class="display-area">Display Area 3</a>
+                <a href="#" class="display-area">Display Area 4</a>
+                <a href="#" class="display-area">Display Area 5</a>
+                <a href="#" class="display-area">Display Area 6</a>
+            </div>
+            <a href="#" class="nav-link box-text" onclick="toggleSubMenu('employee')">Employee Master <i class="fa fa-angle-down"></i></a>
+            <div id="employeeSubMenu" class="sub-menu box-text">
+                <a href="#" class="display-area">Display Area A</a>
+                <a href="#" class="display-area">Display Area B</a>
+                <a href="#" class="display-area">Display Area C</a>
+            </div>
+        </nav>
+
+        <div class="content">
+            <nav class="navbar top-navbar">
+                <div class="nav-link" style="font-weight: bold; color: white; font-size:1.2rem;">Organization Units</div>
+                <ul class="nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #fff;" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #fff;" href="#"><i class="fas fa-bell"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #fff;" href="#"><img src="profile.jpg" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;"></a>
+                        </li>
+                </ul>
+            </nav>
+            <div class="display-areas">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="display-arear d-flex align-items-center">
+                            <i class="fas fa-building mr-3 ml-2"></i>
+                            <div class="text-right ml-2 box-text">
+                                <div>Total Units</div>
+                                <div style="color: black; font-size: 1.5rem; font-weight: bold; text-align: left;">9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="display-arear d-flex align-items-center">
+                            <i class="fas fa-building mr-3 ml-2"></i>
+                            <div class="text-right ml-2 box-text">
+                                <div>Total Office Locations</div>
+                                <div style="color: black; font-size: 1.5rem; font-weight: bold; text-align: left;">7</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="display-arear d-flex align-items-center">
+                            <i class="fas fa-building mr-3 ml-2"></i>
+                            <div class="text-right ml-2 box-text">
+                                <div>Total Active Units</div>
+                                <div style="color: black; font-size: 1.5rem; font-weight: bold; text-align: left;">5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="display-arear d-flex align-items-center">
+                            <i class="fas fa-building mr-3 ml-2"></i>
+                            <div class="text-right ml-2 box-text">
+                                <div>In progress units</div>
+                                <div style="color: black; font-size: 1.5rem; font-weight: bold; text-align: left;">2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" style="height:10rem;">
+                        <div class="display-arear pr-2">
+                            <div style="display: flex; align-items: flex-start;">
+                                <img src="logo.png" alt="Logo" style="font-size: 0.85rem; width: 40px; height: 40px; margin-right: 10px; margin-top: -5px;">
+                                <div>
+                                    <div style="font-size: 0.85rem;">Total Units</div>
+                                    <ul class ="mt-4" style="list-style-type: none; padding: 0; margin: 5px 0 5px -40px;">
+                                        <li class="mb-1" style="font-size: 14px;"><i class="fas fa-circle" style="color: green; font-size: 10px; margin-right: 5px;"></i> Active Units</li>
+                                        <li class="mb-1" style="font-size: 14px;"><i class="fas fa-circle" style="color: yellow; font-size: 10px; margin-right: 5px;"></i> In Progress Units</li>
+                                        <li class="mb-1" style="font-size: 14px;"><i class="fas fa-circle" style="color: grey; font-size: 10px; margin-right: 5px;"></i> Inactive Units</li>
+                                    </ul>
+                                    </div>
+                                <img src="graph.png" alt="Graph" class="ml-2" style="width: 100%; max-width: 100px; margin-top: 10px;">
+                                </div>
+                        </div>
+                                      
+                    </div>
+                    <div class="col-md-8">
+                        <div class="display-arear" style="display: flex; flex-direction: column;">
+                            <div class="mt-2" style="display: flex; justify-content: space-between; align-items: center;">
+                                <div style="font-weight: bold;">Organization Units List</div>
+                                <div  class="my-1 mx-2 rounded" style="background-color: #006400;">
+                                    <i class="fas fa-plus-circle ml-1" style="font-size: 0.9rem; color: white"></i> 
+                                    <a href="#" class="px-2" style="font-size: 0.9rem; text-decoration: none; color: #fff;">
+                                        Add Now 
+                                    </a>
+                                </div>
+                            </div>
+                            <hr class="mt-2" style="border-top: 2px solid green; margin: 10px 0;">
+                            <div style="display: flex; justify-content: flex-end;">
+                                <div class="mb-2" style="display: flex;">
+                                    <div style="margin-right: 10px;">
+                                        <select class="px-3 py-1 rounded box-text" style="font-size: 0.9rem; border: 1px solid #006400; background-color: #dfe8df; color: #006400;">
+                                            <option value="10">10</option>
+                                            <option value="20">20</option>
+                                            <option value="30">30</option>
+                                        </select>
+                                    </div>
+                                    <div style="position: relative;">
+                                        <input type="text" class="px-3 rounded" style="border: 1px solid #006400; background-color: #dfe8df; color: #006400; padding-right: 2rem;" placeholder="Search...">
+                                        <i class="fa-solid fa-magnifying-glass" style="color: #006400; font-size: 0.9rem; position: absolute; top: 50%; transform: translateY(-50%); right: 8px;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="mb-3" style="width: 100%; margin-top: 10px; border-collapse: collapse; border: 1px solid grey;">
+                                <thead>
+                                    <tr style="background: linear-gradient(to right, #006400, #00b050); color: #fff;" class="box-text">
+                                        <th style="padding: 10px;">Sr. No.</th>
+                                        <th style="padding: 10px;">Unit Name</th>
+                                        <th style="padding: 10px; border: 1px solid grey">Office Location</th>
+                                        <th style="padding: 10px; border: 1px solid grey">Status</th>
+                                        <th style="padding: 10px; border: 1px solid grey">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="border-bottom: 1px solid grey;" class="box-text">
+                                        <td style="padding: 10px;;">1</td>
+                                        <td style="padding: 10px;">Unit A</td>
+                                        <td style="padding: 10px;">Location A</td>
+                                        <td style="padding: 10px;">
+                                            <button class="btn btn-toggle" style="color: green;" data-status="active"><i class="fas fa-toggle-on"></i></button>
+                                        </td>
+                                        <td style="padding: 10px;">
+                                            <div class="col-md-2" style="display: flex; justify-content: space-between;">
+                                                <a href="#"><i class="fas fa-edit mr-3" style="color: black; font-size: 1.2rem;"></i></a>
+                                                <a href="#"><i class="fas fa-trash-alt" style="color: black; font-size: 1.2rem;"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid grey;" class="box-text">
+                                        <td style="padding: 10px;">2</td>
+                                        <td style="padding: 10px;">Unit B</td>
+                                        <td style="padding: 10px;">Location B</td>
+                                        <td style="padding: 10px;">
+                                            <button class="btn btn-toggle" style="color: gray;" data-status="active"><i class="fas fa-toggle-on"></i></button>
+                                        </td>
+                                        <td style="padding: 10px;">
+                                            <div class="col-md-2" style="display: flex; justify-content: space-between;">
+                                                <a href="#"><i class="fas fa-edit mr-3" style="color: black; font-size: 1.2rem;"></i></a>
+                                                <a href="#"><i class="fas fa-trash-alt" style="color: black; font-size: 1.2rem;"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr style="border-bottom: 1px solid grey;" class="box-text">
+                                        <td style="padding: 10px;">3</td>
+                                        <td style="padding: 10px;">Unit C</td>
+                                        <td style="padding: 10px;">Location C</td>
+                                        <td style="padding: 10px;">
+                                            <button class="btn btn-toggle" style="color: yellow;" data-status="active"><i class="fas fa-toggle-on"></i></button>
+                                        </td>
+                                        <td style="padding: 10px;">
+                                            <div class="col-md-2" style="display: flex; justify-content: space-between;">
+                                                <a href="#"><i class="fas fa-edit mr-3" style="color: black; font-size: 1.2rem;"></i></a>
+                                                <a href="#"><i class="fas fa-trash-alt" style="color: black; font-size: 1.2rem;"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <div style="display: flex; align-items: center; justify-content: space-between;">
+                                <div class="px-3 py-1 rounded" style="border: 1px solid #006400; background-color: #dfe8df;">
+                                    <i class="fa-solid fa-arrow-left" style="font-size: 1rem; color: #006400;"></i>
+                                    <a href="#" class="box-text" style="font-size: 0.9rem; text-decoration: none; color: #006400;">Previous</a>
+                                </div>
+
+                                <div class="mt-2 box-text" style="display: flex; font-size: 0.75rem;">
+                                    <div style="margin-right: 5px; padding: 5px; border: 1px solid #ccc;">&lt;</div>
+                                    <div style="margin-right: 5px; padding: 5px; border: 1px solid #ccc;">1</div>
+                                    <div style="margin-right: 5px; padding: 5px; border: 1px solid #ccc;">2</div>
+                                    <div style="margin-right: 5px; padding: 5px; border: 1px solid #ccc;">3</div>
+                                    <div style="margin-right: 5px; padding: 5px; border: 1px solid #ccc;">&gt;</div>
+                                </div>
+                            
+                                <div class="px-3 py-1 rounded" style="border: 1px solid #006400; background-color: #dfe8df;">
+                                    <a href="#"class="box-text" style="font-size: 0.9rem; text-decoration: none; color: #006400;">Next</a>
+                                    <i class="fa-solid fa-arrow-right" style="font-size: 1rem; color: #006400;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSubMenu(menuId) {
+            var subMenu = document.getElementById(menuId + 'SubMenu');
+            if (subMenu.style.display === 'block') {
+                subMenu.style.display = 'none';
+            } else {
+                subMenu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/emp_details.css" rel="stylesheet">
+</head>
+<body>
+    <div class="both">
+        <nav class="navbar-vertical">
+            <a class="nav-link" style="color: #fff;" href="#"><img src="COMPANY_LOGO_NEEDS_TO_UPDATED" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;"></a>
+            <a href="#" class="nav-link box-text" onclick="toggleSubMenu('masters')">Masters <i class="fa fa-angle-down"></i></a>
+            <div id="mastersSubMenu" class="sub-menu box-text">
+                <a href="#" class="display-area">Display Area 1</a>
+                <a href="#" class="display-area">Display Area 2</a>
+                <a href="#" class="display-area">Display Area 3</a>
+                <a href="#" class="display-area">Display Area 4</a>
+                <a href="#" class="display-area">Display Area 5</a>
+                <a href="#" class="display-area">Display Area 6</a>
+            </div>
+            <a href="#" class="nav-link box-text" onclick="toggleSubMenu('employee')">Employee Master <i class="fa fa-angle-down"></i></a>
+            <div id="employeeSubMenu" class="sub-menu box-text">
+                <a href="#" class="display-area">Display Area A</a>
+                <a href="#" class="display-area">Display Area B</a>
+                <a href="#" class="display-area">Display Area C</a>
+            </div>
+        </nav>
+
+        <div class="content">
+            <nav class="navbar">
+                <div class="nav-link box-text" style="font-weight: bold; color: black; font-size:1.1rem;">Employee Details</div>
+                <ul class="nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black;" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black;" href="#"><i class="fas fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: black;" href="#"><img src="COMPANY_LOGO_NEEDS_TO_UPDATED" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;"></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="top-navbar mt-4" style="position: relative; background-position: center 13%; height: 6rem;">
+                <div style="color: #fff; position: absolute; left: 2rem; display: flex; align-items: flex-end; z-index: 1;">
+                    <div>
+                        <p class="mb-1 box-text" style="font-size:1.1rem; font-weight: bold;">Hi , Raghav Goel</p>
+                        <p class="mb-1 box-text">Please view the Employee's list here</p>
+                        <i class="fa-solid fa-circle-arrow-down mb-0"></i>
+                    </div>
+                </div>
+                <div class="image-right" style="position: relative;">
+                    <img src="../../images/stack.svg" alt="stack" class="d-none d-md-block stage-image">
+                    <img src="../../images/boy-laptop.svg" alt="Boy Sitting Laptop" class="d-none d-md-block boy-image">
+                    <img src="../../images/girl_laptop_2.svg" alt="Girl Sitting Laptop" class="d-none d-md-block girl-image">
+                </div>
+            </div>
+ 
+            <div class="p-1 mt-5" style="background-color:white">
+            <div class="d-flex justify-content-between align-items-center mt-5 mx-3">
+                <div class="box-text" style="font-size:1.5rem; font-weight: bold;">Employees List</div>
+                <button class="btn px-sm-0 box-text" style="background-color: #006400; color: #fff;">
+                    <i class="fas fa-plus-circle ml-1 box-text"></i> Add Employee
+                </button>
+            </div>
+            <hr class="mx-3" style="border-color: green; border-width: 3px;">
+    
+            <div class="row" style="color: #006400">
+                <!-- First row of profiles -->
+                <div class="col-md-3 text-center profile mb-4 box-text">
+                    <div class="profile-circle mx-auto">
+                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                    </div>
+                    <p class="mt-2 mb-0">John Doe</p>
+                    <p class="text-muted">Manager</p>
+                    <div class="profile-icons">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center profile mb-4 box-text">
+                    <div class="profile-circle mx-auto">
+                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                    </div>
+                    <p class="mt-2 mb-0">Jane Smith</p>
+                    <p class="text-muted">Designer</p>
+                    <div class="profile-icons">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center profile mb-4 box-text">
+                    <div class="profile-circle mx-auto">
+                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                    </div>
+                    <p class="mt-2 mb-0">Michael Brown</p>
+                    <p class="text-muted">Developer</p>
+                    <div class="profile-icons">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center profile mb-4 box-text">
+                    <div class="profile-circle mx-auto">
+                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                    </div>
+                    <p class="mt-2 mb-0">Emily Johnson</p>
+                    <p class="text-muted">Tester</p>
+                    <div class="profile-icons">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row" style="color: #006400">
+                <!-- Second row of profiles -->
+                <div class="col-md-3 text-center profile mb-4 box-text">
+                    <div class="profile-circle mx-auto">
+                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                    </div>
+                    <p class="mt-2 mb-0">Chris Lee</p>
+                    <p class="text-muted">HR</p>
+                    <div class="profile-icons">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center profile mb-4 box-text">
+                    <div class="profile-circle mx-auto">
+                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                    </div>
+                    <p class="mt-2 mb-0">Sara Parker</p>
+                    <p class="text-muted">Analyst</p>
+                    <div class="profile-icons">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-trash"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center profile mb-4 box-text">
+                    <div class="profile-circle mx-auto">
+                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                    </div>
+                    <p class="mt-2 mb-0">James Wilson</p>
+                    <p class="text-muted">Consultant</p>
+                    <div class="profile-icons">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center profile mb-4 box-text">
+                    <div class="profile-circle mx-auto">
+                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                    </div>
+                    <p class="mt-2 mb-0">Linda Martinez</p>
+                    <p class="text-muted">Coordinator</p>
+                    <div class="profile-icons">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="text-center mb-4">
+                <button class="btn btn-primary box-text" style="border: 1px solid #006400; background-color: #dfe8df; color: #006400">Load More</button>
+            </div>
+        </div>
+    </div>
+                           
+                            
+    <script>
+        function toggleSubMenu(menuId) {
+            var subMenu = document.getElementById(menuId + 'SubMenu');
+            if (subMenu.style.display === 'block') {
+                subMenu.style.display = 'none';
+            } else {
+                subMenu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
