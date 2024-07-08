@@ -1,0 +1,153 @@
+.both {
+    display: flex;
+    height: 100vh;
+    background-color: #dfe8df; 
+}
+
+.navbar-vertical {
+    background: linear-gradient(to right, #006400, #00b050);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media (min-width:768px) and (max-width: 1000px) {
+    .navbar-vertical {
+        width: 160px;
+    }
+    .box-text{
+        margin-left:0.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:862px){
+    .image-right{
+        margin-right: -4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-vertical {
+        width: 150px;
+    }
+}
+
+@media (max-width:700px){
+    .image-right{
+        margin-right: 2rem;
+        top:-40%;
+        height:7rem;
+        width:9rem;
+    }
+    .box-text{
+        font-size: 0.6rem;
+    }
+    .profile-circle{
+        height:4rem;
+        width:4rem;
+    }
+
+}
+
+@media(max-width : 553px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+
+
+
+.navbar-vertical .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+.navbar-vertical .nav-link:hover {
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    padding-left: 0;
+    border-radius: 5px;
+}
+.sub-menu {
+    display: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+.sub-menu.show {
+    display: block;
+}
+.sub-menu a {
+    display: block;
+    color: #fff;
+    padding: 0.25rem 0;
+    text-decoration: none;
+    margin: 0.25rem 0;
+}
+.sub-menu a:hover {
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    padding-left: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.content {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+.top-navbar {
+    background-image: url('../images/background.jpg');
+    background-position: center 13%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+}
+.display-areas {
+    margin-top: 1rem;
+}
+.display-areas .row {
+    margin-bottom: 1rem;
+}
+
+/* text areas */
+.display-arear {
+    background-color: #fff;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: rgb(6, 35, 13);
+}
+.display-arear i, .display-arear .text-right {
+    color: #006400; 
+}
+.display-arear i {
+    font-size: 1.5em; 
+}
+
+.display-arear .total-count {
+    flex-grow: 1;
+    font-size: 1.5rem; 
+    border: 1px solid #006400; 
+    padding: 0.25rem;
+    border-radius: 3px;
+}
+
+.btn-toggle {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.custom-button {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background color and box-shadow */
+    border: none; /* Remove default button border */
+}
