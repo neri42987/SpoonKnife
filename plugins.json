@@ -522,7 +522,7 @@
         "name": "TenshiProvider"
     },
     {
-        "iconUrl": "https://www.google.com/s2/favicons?domain=theflix.to&sz=%size%",
+        "iconUrl": "https://www.google.com/s2/favicons?domain=theflixertv.to&sz=%size%",
         "apiVersion": 1,
         "repositoryUrl": "https://codeberg.org/cloudstream/cloudstream-extensions",
         "fileSize": 44235,
