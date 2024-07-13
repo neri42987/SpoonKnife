@@ -703,7 +703,7 @@
         "name": "PelisplusProvider"
     },
     {
-        "iconUrl": "https://www.google.com/s2/favicons?domain=www.pinoy-hd.xyz&sz=%size%",
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.pinoymovies.si&sz=%size%",
         "apiVersion": 1,
         "repositoryUrl": "https://codeberg.org/cloudstream/cloudstream-extensions-multilingual",
         "fileSize": 12345,
@@ -719,7 +719,7 @@
         "version": 1,
         "internalName": "PinoyHDXyzProvider",
         "description": "Pinoy HD Movies - High Definition",
-        "url": "https://codeberg.org/cloudstream/cloudstream-extensions-multilingual/raw/branch/builds/PinoyHDXyzProvider.cs3",
+        "url": "https://codeberg.org/cloudstream/cloudstream-extensions-multilingual/raw/branch/builds/PinoymoviesProvider.cs3",
         "name": "PinoyHDXyzProvider"
     },
     {
@@ -741,7 +741,7 @@
         "name": "PinoyMovies"
     },
     {
-        "iconUrl": "https://www.google.com/s2/favicons?domain=www.pinoymovieshub.ph&sz=%size%",
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.pinoymovieshub.si&sz=%size%",
         "apiVersion": 1,
         "repositoryUrl": "https://codeberg.org/cloudstream/cloudstream-extensions-multilingual",
         "fileSize": 18743,
