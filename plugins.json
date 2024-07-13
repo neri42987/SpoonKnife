@@ -19,7 +19,7 @@
         "name": "AllAnimeProvider"
     },
     {
-        "iconUrl": "https://www.google.com/s2/favicons?domain=allmoviesforyou.net&sz=%size%",
+        "iconUrl": "https://www.google.com/s2/favicons?domain=anymovie.cc&sz=%size%",
         "apiVersion": 1,
         "repositoryUrl": "https://codeberg.org/cloudstream/cloudstream-extensions",
         "fileSize": 14139,
