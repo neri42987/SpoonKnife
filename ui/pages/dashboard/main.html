@@ -6,42 +6,90 @@
     <title>Main page</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet">
 </head>
 <body>
-    <div class="both">
+    <div class="both d-flex">
         <nav class="navbar-vertical">
-            <a class="nav-link" style="color: #fff;" href="#"><img src="profile.jpg" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;"></a>
+            <a style="color: #fff;" href="#"><img src="../../images/profile.svg" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;"></a>
             <!-- <hr class="mt-1" style="border-top: 2px solid white; margin: 10px 0;"> -->
-            <a href="#" class="nav-link box-text" onclick="toggleSubMenu('masters')">Masters <i class="fa fa-angle-down"></i></a>
-            <div id="mastersSubMenu" class="sub-menu box-text">
-                <a href="#" class="display-area">Display Area 1</a>
-                <a href="#" class="display-area">Display Area 2</a>
-                <a href="#" class="display-area">Display Area 3</a>
-                <a href="#" class="display-area">Display Area 4</a>
-                <a href="#" class="display-area">Display Area 5</a>
-                <a href="#" class="display-area">Display Area 6</a>
+            <div class="dropdown container mt-3" id="dropdown1"> 
+                <a href="#" class="nav-link d-flex justify-content-between align-items-center px-0" onclick="toggleDropdown('dropdown1')">
+                    <div class="left-content d-flex align-items-center">
+                        <img src="../../images/icons/employee.svg" alt="Masters"> Masters
+                    </div>
+                    <div class="right-content ml-auto d-flex align-items-center">
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </a>
+                <div id="mastersSubMenu" class="dropdown-content nav-link-drop left-side right-side">
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/department.svg" alt="Masters"> <a href="#">Organization Units</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/Employee_grades.svg" alt="Masters"> <a href="#" class="display-area">Employee Grades</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/department.svg" alt="Masters"> <a href="#" class="display-area">Department</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/insurance_details.svg" alt="Masters"> <a href="#" class="display-area">Employment Type</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/submit_docs.svg" alt="Masters"> <a href="#" class="display-area">Designation</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/calender_master.svg" alt="Masters"> <a href="#" class="display-area">Calender Master</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/public_holiday.svg" alt="Masters"> <a href="#" class="display-area">Public Holiday</a>
+                    </div>
+                </div>
             </div>
-            <a href="#" class="nav-link box-text" onclick="toggleSubMenu('employee')">Employee Master <i class="fa fa-angle-down"></i></a>
-            <div id="employeeSubMenu" class="sub-menu box-text">
-                <a href="#" class="display-area">Display Area A</a>
-                <a href="#" class="display-area">Display Area B</a>
-                <a href="#" class="display-area">Display Area C</a>
+            <div class="dropdown container mt-2" id="dropdown2">
+              <a href="#" class="nav-link d-flex justify-content-between align-items-center px-0" onclick="toggleDropdown('dropdown2')">
+                <div class="left-content px-0 d-flex align-items-center">
+                    <img src="../../images/icons/employee-master.svg" alt="Employee master"> Employee Master
+                </div>
+                <div class="right-content ml-auto d-flex align-items-center">
+                    <i class="right-content fa fa-angle-down"></i>
+                </div>
+              </a>
+                <div id="employeeSubMenu" class="dropdown-content nav-link-drop">
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/department.svg" alt="Masters"> <a href="#" class="display-area">Employee Details</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/bank_details.svg" alt="Masters"> <a href="#" class="display-area">Bank Details</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/insurance_details.svg" alt="Masters"> <a href="#" class="display-area">Insurance Details</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/submit_docs.svg" alt="Masters"> <a href="#" class="display-area" style="width: auto;">Submitted Documents</a>
+                    </div>
+                </div>
             </div>
         </nav>
 
         <div class="content">
-            <nav class="navbar top-navbar">
-                <div class="nav-link" style="font-weight: bold; color: white; font-size:1.2rem;">Organization Units</div>
-                <ul class="nav ml-auto">
+            <nav class="navbar top-navbar row">
+                <div class="col-md-7 px-3 py-1 nav-link" style="font-weight: bold; color: white; font-size:1.2rem;">Organization Units</div>
+                <ul class="col-md-5 d-flex justify-content-end nav">
                         <li class="nav-item">
                             <a class="nav-link" style="color: #fff;" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" style="color: #fff;" href="#"><i class="fas fa-bell"></i></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="color: #fff;" href="#"><img src="profile.jpg" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;"></a>
+                        <li class="nav-items">
+                            <a class="nav-links" style="color: #fff; border: 1px solid black; border-radius: 50%;" href="#"><img src="../../images/profile.svg" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;"></a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="nav-links" style="color: white; text-decoration: none;">Admin</a>
+                        </li>
+                        <li class="nav-items">
+                            <a class="nav-links" style="color: white; text-decoration: none;" href="#"><i class="fa fa-angle-down"></i></a>
                         </li>
                 </ul>
             </nav>
@@ -106,12 +154,11 @@
                         <div class="display-arear" style="display: flex; flex-direction: column;">
                             <div class="mt-2" style="display: flex; justify-content: space-between; align-items: center;">
                                 <div style="font-weight: bold;">Organization Units List</div>
-                                <div  class="my-1 mx-2 rounded" style="background-color: #006400;">
-                                    <i class="fas fa-plus-circle ml-1" style="font-size: 0.9rem; color: white"></i> 
-                                    <a href="#" class="px-2" style="font-size: 0.9rem; text-decoration: none; color: #fff;">
-                                        Add Now 
-                                    </a>
-                                </div>
+                                
+                                <button class="btn d-flex justify-content-center align-items-center px-3" style="background-color: #006400; color: #fff;">
+                                        <i class="fas fa-plus-circle px-2" style="color: #fff; font-size: 1rem;"></i> <div> Add Now </div>
+                                </button>
+                                
                             </div>
                             <hr class="mt-2" style="border-top: 2px solid green; margin: 10px 0;">
                             <div style="display: flex; justify-content: flex-end;">
@@ -212,14 +259,28 @@
     </div>
 
     <script>
-        function toggleSubMenu(menuId) {
-            var subMenu = document.getElementById(menuId + 'SubMenu');
-            if (subMenu.style.display === 'block') {
-                subMenu.style.display = 'none';
-            } else {
-                subMenu.style.display = 'block';
+      function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            const isOpen = dropdown.classList.contains('open');
+
+            // Close all dropdowns
+            const allDropdowns = document.querySelectorAll('.dropdown');
+            allDropdowns.forEach(dd => dd.classList.remove('open'));
+
+            // Open the clicked dropdown if it was closed
+            if (!isOpen) {
+                dropdown.classList.add('open');
             }
         }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.closest('.nav-link')) {
+                const allDropdowns = document.querySelectorAll('.dropdown');
+                allDropdowns.forEach(dd => dd.classList.remove('open'));
+            }
+        }
+
     </script>
 </body>
 </html>
