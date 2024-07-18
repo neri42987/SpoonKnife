@@ -3,68 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Details</title>
+    <title>employee details</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet">
     <link href="../../css/emp_details.css" rel="stylesheet">
 </head>
 <body>
     <div class="both">
         <nav class="navbar-vertical">
-            <a class="nav-link" style="color: #fff;" href="#"><img src="COMPANY_LOGO_NEEDS_TO_UPDATED" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;"></a>
-            <a href="#" class="nav-link box-text" onclick="toggleSubMenu('masters')">Masters <i class="fa fa-angle-down"></i></a>
-            <div id="mastersSubMenu" class="sub-menu box-text">
-                <a href="#" class="display-area">Display Area 1</a>
-                <a href="#" class="display-area">Display Area 2</a>
-                <a href="#" class="display-area">Display Area 3</a>
-                <a href="#" class="display-area">Display Area 4</a>
-                <a href="#" class="display-area">Display Area 5</a>
-                <a href="#" class="display-area">Display Area 6</a>
+            <a style="color: #fff;" href="#"><img src="../../images/profile.svg" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;"></a>
+            <!-- <hr class="mt-1" style="border-top: 2px solid white; margin: 10px 0;"> -->
+            <div class="dropdown container mt-3" id="dropdown1"> 
+                <a href="#" class="nav-link d-flex justify-content-between align-items-center px-0" onclick="toggleDropdown('dropdown1')">
+                    <div class="left-content d-flex align-items-center">
+                        <img src="../../images/icons/employee.svg" alt="Masters"> Masters
+                    </div>
+                    <div class="right-content ml-auto d-flex align-items-center">
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </a>
+                <div id="mastersSubMenu" class="dropdown-content nav-link-drop left-side right-side">
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/department.svg" alt="Masters"> <a href="#">Organization Units</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/Employee_grades.svg" alt="Masters"> <a href="#" class="display-area">Employee Grades</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/department.svg" alt="Masters"> <a href="#" class="display-area">Department</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/insurance_details.svg" alt="Masters"> <a href="#" class="display-area">Employment Type</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/submit_docs.svg" alt="Masters"> <a href="#" class="display-area">Designation</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/calender_master.svg" alt="Masters"> <a href="#" class="display-area">Calender Master</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/public_holiday.svg" alt="Masters"> <a href="#" class="display-area">Public Holiday</a>
+                    </div>
+                </div>
             </div>
-            <a href="#" class="nav-link box-text" onclick="toggleSubMenu('employee')">Employee Master <i class="fa fa-angle-down"></i></a>
-            <div id="employeeSubMenu" class="sub-menu box-text">
-                <a href="#" class="display-area">Display Area A</a>
-                <a href="#" class="display-area">Display Area B</a>
-                <a href="#" class="display-area">Display Area C</a>
+            <div class="dropdown container mt-2" id="dropdown2">
+              <a href="#" class="nav-link d-flex justify-content-between align-items-center px-0" onclick="toggleDropdown('dropdown2')">
+                <div class="left-content px-0 d-flex align-items-center">
+                    <img src="../../images/icons/employee-master.svg" alt="Employee master"> Employee Master
+                </div>
+                <div class="right-content ml-auto d-flex align-items-center">
+                    <i class="right-content fa fa-angle-down"></i>
+                </div>
+              </a>
+                <div id="employeeSubMenu" class="dropdown-content nav-link-drop">
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/department.svg" alt="Masters"> <a href="#" class="display-area">Employee Details</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/bank_details.svg" alt="Masters"> <a href="#" class="display-area">Bank Details</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/insurance_details.svg" alt="Masters"> <a href="#" class="display-area">Insurance Details</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/submit_docs.svg" alt="Masters"> <a href="#" class="display-area" style="width: auto;">Submitted Documents</a>
+                    </div>
+                </div>
             </div>
         </nav>
 
         <div class="content">
-            <nav class="navbar">
-                <div class="nav-link box-text" style="font-weight: bold; color: black; font-size:1.1rem;">Employee Details</div>
-                <ul class="nav ml-auto">
+            <nav class="navbar row">
+                <div class="col-md-7 px-3 py-1 nav-link box-text" style="font-weight: bold; color: black; font-size:1.1rem;">Employee Details</div>
+                <ul class="col-md-5 d-flex justify-content-end nav">
                     <li class="nav-item">
                         <a class="nav-link" style="color: black;" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="color: black;" href="#"><i class="fas fa-bell"></i></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: black;" href="#"><img src="COMPANY_LOGO_NEEDS_TO_UPDATED" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;"></a>
+                    <li class="nav-items">
+                        <a class="nav-links" style="color: black; border: 1px solid black; border-radius: 50%;" href="#"><img src="../../images/profile.svg" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;"></a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-links" style="color:black; text-decoration: none;">Admin</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-links" style="color:black; text-decoration: none;" href="#"><i class="fa fa-angle-down"></i></a>
                     </li>
                 </ul>
             </nav>
             <div class="top-navbar mt-4" style="position: relative; background-position: center 13%; height: 6rem;">
                 <div style="color: #fff; position: absolute; left: 2rem; display: flex; align-items: flex-end; z-index: 1;">
                     <div>
-                        <p class="mb-1 box-text" style="font-size:1.1rem; font-weight: bold;">Hi , Raghav Goel</p>
+                        <p class="mb-1 box-text" style="font-size:1.1rem; font-weight: bold;">Hi , Javed Khan !</p>
                         <p class="mb-1 box-text">Please view the Employee's list here</p>
                         <i class="fa-solid fa-circle-arrow-down mb-0"></i>
                     </div>
                 </div>
+                                             
                 <div class="image-right" style="position: relative;">
-                    <img src="../../images/stack.svg" alt="stack" class="d-none d-md-block stage-image">
+                    <img src="../../images/stack.svg" alt="Stage 2" class="d-none d-md-block stage-image">
                     <img src="../../images/boy-laptop.svg" alt="Boy Sitting Laptop" class="d-none d-md-block boy-image">
-                    <img src="../../images/girl_laptop_2.svg" alt="Girl Sitting Laptop" class="d-none d-md-block girl-image">
+                    <img src="../../images/girl_laptop_1.svg" alt="Girl Sitting Laptop" class="d-none d-md-block girl-image">
                 </div>
             </div>
  
             <div class="p-1 mt-5" style="background-color:white">
             <div class="d-flex justify-content-between align-items-center mt-5 mx-3">
                 <div class="box-text" style="font-size:1.5rem; font-weight: bold;">Employees List</div>
-                <button class="btn px-sm-0 box-text" style="background-color: #006400; color: #fff;">
-                    <i class="fas fa-plus-circle ml-1 box-text"></i> Add Employee
+                <button class="btn d-flex justify-content-center align-items-center px-3 py-2" style="background-color: #006400; color: #fff;">
+                    <i class="fas fa-plus-circle px-2 box-text"></i> <div> Add Now </div>
                 </button>
             </div>
             <hr class="mx-3" style="border-color: green; border-width: 3px;">
@@ -73,7 +124,7 @@
                 <!-- First row of profiles -->
                 <div class="col-md-3 text-center profile mb-4 box-text">
                     <div class="profile-circle mx-auto">
-                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                        <img src="pic" alt="Profile Image">
                     </div>
                     <p class="mt-2 mb-0">John Doe</p>
                     <p class="text-muted">Manager</p>
@@ -85,7 +136,7 @@
                 </div>
                 <div class="col-md-3 text-center profile mb-4 box-text">
                     <div class="profile-circle mx-auto">
-                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                        <img src="pic" alt="Profile Image">
                     </div>
                     <p class="mt-2 mb-0">Jane Smith</p>
                     <p class="text-muted">Designer</p>
@@ -97,7 +148,7 @@
                 </div>
                 <div class="col-md-3 text-center profile mb-4 box-text">
                     <div class="profile-circle mx-auto">
-                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                        <img src="pic" alt="Profile Image">
                     </div>
                     <p class="mt-2 mb-0">Michael Brown</p>
                     <p class="text-muted">Developer</p>
@@ -109,7 +160,7 @@
                 </div>
                 <div class="col-md-3 text-center profile mb-4 box-text">
                     <div class="profile-circle mx-auto">
-                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                        <img src="pic" alt="Profile Image">
                     </div>
                     <p class="mt-2 mb-0">Emily Johnson</p>
                     <p class="text-muted">Tester</p>
@@ -125,7 +176,7 @@
                 <!-- Second row of profiles -->
                 <div class="col-md-3 text-center profile mb-4 box-text">
                     <div class="profile-circle mx-auto">
-                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                        <img src="pic" alt="Profile Image">
                     </div>
                     <p class="mt-2 mb-0">Chris Lee</p>
                     <p class="text-muted">HR</p>
@@ -137,7 +188,7 @@
                 </div>
                 <div class="col-md-3 text-center profile mb-4 box-text">
                     <div class="profile-circle mx-auto">
-                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                        <img src="pic" alt="Profile Image">
                     </div>
                     <p class="mt-2 mb-0">Sara Parker</p>
                     <p class="text-muted">Analyst</p>
@@ -149,7 +200,7 @@
                 </div>
                 <div class="col-md-3 text-center profile mb-4 box-text">
                     <div class="profile-circle mx-auto">
-                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                        <img src="pic" alt="Profile Image">
                     </div>
                     <p class="mt-2 mb-0">James Wilson</p>
                     <p class="text-muted">Consultant</p>
@@ -161,7 +212,7 @@
                 </div>
                 <div class="col-md-3 text-center profile mb-4 box-text">
                     <div class="profile-circle mx-auto">
-                        <img src="ACCOUNT_USER_IMAGE" alt="Profile Image">
+                        <img src="pic" alt="Profile Image">
                     </div>
                     <p class="mt-2 mb-0">Linda Martinez</p>
                     <p class="text-muted">Coordinator</p>
@@ -181,12 +232,25 @@
                            
                             
     <script>
-        function toggleSubMenu(menuId) {
-            var subMenu = document.getElementById(menuId + 'SubMenu');
-            if (subMenu.style.display === 'block') {
-                subMenu.style.display = 'none';
-            } else {
-                subMenu.style.display = 'block';
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            const isOpen = dropdown.classList.contains('open');
+
+            // Close all dropdowns
+            const allDropdowns = document.querySelectorAll('.dropdown');
+            allDropdowns.forEach(dd => dd.classList.remove('open'));
+
+            // Open the clicked dropdown if it was closed
+            if (!isOpen) {
+                dropdown.classList.add('open');
+            }
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.closest('.nav-link')) {
+                const allDropdowns = document.querySelectorAll('.dropdown');
+                allDropdowns.forEach(dd => dd.classList.remove('open'));
             }
         }
     </script>

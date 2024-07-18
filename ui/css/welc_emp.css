@@ -1,0 +1,317 @@
+.icon-top-right {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #000;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 10px;
+    z-index: 1001;
+}  
+
+.date-time {
+    font-size: 0.9rem;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 600px !important; /* Increased max-width for the search bar */
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.image-right {
+    position: absolute;
+    height: 100%;
+    right: 10px;
+    transform: translateY(-49%);
+}
+
+.image-right img {
+    height: 9rem !important;
+    width: auto;
+}
+
+.celebrate-div{
+    position: relative;
+}
+
+.celebrate-div img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.announcements-head{
+    position:relative;
+}
+
+.announcements {
+    position:absolute;
+    transform: translate(250%, 110%) rotate(90deg);
+    box-shadow: -1px 2px 5px 0 rgb(5, 8, 3);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.custom-text {
+    color: green;
+    font-size: 0.9rem;
+}
+
+@media (min-width:1900px) {
+    .announcements{
+        transform: translate(510%, 120%) rotate(90deg);
+    }
+}
+
+
+@media (min-width:1850px) and (max-width:1900px) {
+    .announcements{
+        transform: translate(480%, 120%) rotate(90deg);
+    }
+}
+
+@media (min-width:1800px) and (max-width:1850px) {
+    .announcements{
+        transform: translate(460%, 120%) rotate(90deg);
+    }
+}
+
+@media (min-width:1750px) and (max-width:1800px) {
+    .announcements{
+        transform: translate(440%, 120%) rotate(90deg);
+    }
+}
+
+@media (min-width:1700px) and (max-width:1750px) {
+    .announcements{
+        transform: translate(420%, 120%) rotate(90deg);
+    }
+}
+
+@media (min-width:1650px) and (max-width:1700px) {
+    .announcements{
+        transform: translate(400%, 120%) rotate(90deg);
+    }
+}
+
+@media (min-width:1600px) and (max-width:1650px) {
+    .announcements{
+        transform: translate(380%, 120%) rotate(90deg);
+    }
+}
+
+@media (min-width:1550px) and (max-width:1600px) {
+    .announcements{
+        transform: translate(360%, 120%) rotate(90deg);
+    }
+}
+
+@media (min-width:1500px) and (max-width:1550px) {
+    .announcements{
+        transform: translate(340%, 120%) rotate(90deg);
+    }
+}
+
+@media (min-width:1450px) and (max-width:1500px) {
+    .announcements{
+        transform: translate(320%, 120%) rotate(90deg);
+    }
+}
+
+@media (min-width:1400px) and (max-width:1450px) {
+    .announcements{
+        transform: translate(300%, 120%) rotate(90deg);
+    }
+}
+
+@media (min-width:1345px) and (max-width:1400px) {
+    .announcements{
+        transform: translate(280%, 120%) rotate(90deg);
+    }
+}
+
+@media (min-width: 1300px) and (max-width:1344px) {
+    .welcome-text {
+        font-size: 2rem;
+    }
+
+    .date-time {
+        font-size: 1.2rem;
+    }
+
+    .quote-text {
+        font-size: 1.6rem;
+    }
+
+    .announcements{
+        transform: translate(250%, 120%) rotate(90deg);
+    }
+}
+
+@media (min-width:1110px) and (max-width: 1201px) {
+    .announcements {
+        display: none;
+    }
+}
+
+@media (min-width:1001px) and (max-width: 1105px) {
+    .announcements {
+        transform: translate(140%, 115%) rotate(90deg);
+    }
+}
+
+@media (max-width: 992px) {
+    .announcements {
+        transform: translate(140%, 110%) rotate(90deg);
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 880px) {
+    .col-md-3, .col-md-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .custom-text {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .search-input {
+        font-size: 0.9rem; /* Adjust font size for tablets */
+    }
+    .welcome-text {
+        font-size: 1rem;
+    }
+
+    .date-time {
+        font-size: 0.9rem;
+    }
+
+    .quote-text {
+        font-size: 0.9rem;
+    }
+    .image-right {
+        right: 66px; 
+        top: 59%; 
+    }
+
+    .img-man {
+        width: 8rem; 
+        height: 8rem;
+    }
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-input {
+        font-size: 0.9rem;
+    }
+    .welcome-text {
+        font-size: 1.2rem;
+    }
+
+    .date-time {
+        font-size: 0.8rem;
+    }
+
+    .quote-text {
+        font-size: 2rem;
+    }
+    .container {
+        width: 100%;
+        float: none;
+    }
+    .d-flex.flex-wrap > .text-center {
+        flex: 0 0 48%;
+        margin-bottom: 1rem;
+    }
+    .quote-text2 {
+        font-size: 0.7rem !important;
+    }
+}
+
+@media (min-width:657px) and (max-width: 890px) {
+    .announcements {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .left-container, .right-container {
+        width: 100% !important;
+        float: none !important;
+    }
+
+    .celebrate-div .text-center img{
+            height: 4rem !important;
+            width: 4rem !important;
+    }
+
+    .quote-text2 {
+        font-size: 0.7rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .search-input {
+        font-size: 0.8rem; /* Adjust font size for phones */
+    }
+    .welcome-text {
+        font-size: 1rem;
+    }
+
+    .date-time {
+        font-size: 0.7rem;
+    }
+
+    .quote-text {
+        font-size: 0.9rem;
+    }
+    .d-flex.flex-wrap > .text-center {
+        flex: 0 0 100%;
+    }
+    .announcements {
+        transform: translate(160%, 110%) rotate(90deg);
+    }
+
+
+@media (max-width: 421px) {
+        .announcements {
+            transform: translate(80%, 110%) rotate(90deg);
+        }
+    }
+}
+
+.row > [class*='col-'] {
+    margin-bottom: 1rem;
+}

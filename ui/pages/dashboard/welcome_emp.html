@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome employee</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/welc_emp.css" rel="stylesheet">
+</head>
+<body>
+    <div class="both d-flex">
+        <nav class="navbar-vertical">
+            <a style="color: #fff;" href="#"><img src="../../images/profile.svg" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;"></a>
+            <!-- <hr class="mt-1" style="border-top: 2px solid white; margin: 10px 0;"> -->
+            <div class="dropdown container mt-3" id="dropdown1"> 
+                <a href="#" class="nav-link d-flex justify-content-between align-items-center px-0" onclick="toggleDropdown('dropdown1')">
+                    <div class="left-content d-flex align-items-center">
+                        <img src="../../images/icons/employee.svg" alt="Masters"> Masters
+                    </div>
+                    <div class="right-content ml-auto d-flex align-items-center">
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </a>
+                <div id="mastersSubMenu" class="dropdown-content nav-link-drop left-side right-side">
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/department.svg" alt="Masters"> <a href="#">Organization Units</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/Employee_grades.svg" alt="Masters"> <a href="#" class="display-area">Employee Grades</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/department.svg" alt="Masters"> <a href="#" class="display-area">Department</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/insurance_details.svg" alt="Masters"> <a href="#" class="display-area">Employment Type</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/submit_docs.svg" alt="Masters"> <a href="#" class="display-area">Designation</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/calender_master.svg" alt="Masters"> <a href="#" class="display-area">Calender Master</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/public_holiday.svg" alt="Masters"> <a href="#" class="display-area">Public Holiday</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown container mt-2" id="dropdown2">
+              <a href="#" class="nav-link d-flex justify-content-between align-items-center px-0" onclick="toggleDropdown('dropdown2')">
+                <div class="left-content px-0 d-flex align-items-center">
+                    <img src="../../images/icons/employee-master.svg" alt="Employee master"> Employee Master
+                </div>
+                <div class="right-content ml-auto d-flex align-items-center">
+                    <i class="right-content fa fa-angle-down"></i>
+                </div>
+              </a>
+                <div id="employeeSubMenu" class="dropdown-content nav-link-drop">
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/department.svg" alt="Masters"> <a href="#" class="display-area">Employee Details</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/bank_details.svg" alt="Masters"> <a href="#" class="display-area">Bank Details</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/insurance_details.svg" alt="Masters"> <a href="#" class="display-area">Insurance Details</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/submit_docs.svg" alt="Masters"> <a href="#" class="display-area" style="width: auto;">Submitted Documents</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <nav class="navbar row">
+                <div class="col-md-8 search-container px-3 py-1 rounded d-flex nav-link" style="background-color:#fff;">
+                    <i class="fa-solid fa-magnifying-glass" style="font-size: 0.9rem; margin-top: auto; margin-bottom: auto; color: black;"></i>
+                    <input type="text" class="form-control border-0 pl-4 ml-2" style="padding-right: 2rem; width: 100%;" placeholder="Search...">
+                </div>
+        
+                <div class="col-md-4 d-flex justify-content-end nav">
+                    <div class="nav-items">
+                        <a class="nav-links" style="color: black;" href="#"><i class="fas fa-bell"></i></a>
+                    </div>
+                    <div class="nav-items">
+                        <a class="nav-links" style="color: black;" href="#"><img src="../../images/profile.svg" alt="Profile" style="width: 30px; height: 30px; border: 1px solid black; border-radius: 50%;"></a>
+                    </div> 
+                    <div class="nav-items">
+                        <a class="nav-links" style="color: black; text-decoration: none;">Javed</a>
+                    </div>
+                    <div class="nav-items">
+                        <a class="nav-links" style="color: black; text-decoration: none;" href="#"><i class="fa fa-angle-down"></i></a>
+                    </div>
+                </div>
+            </nav>
+        
+
+            <nav class="navbar pl-4 pb-4" style="display: flex; flex-direction: column; align-items: flex-start; background: linear-gradient(to right, #0d4a37, #00b050); box-shadow: 0 6px 2px rgba(255, 255, 0,0.2); color: #fff; border-radius: 15px;">
+                <div class="mt-2 welcome-text" style="font-size:1.4rem;">Welcome, Javed Khan!</div>
+                <div class="mt-2 date-time" style="color: rgba(255, 255, 255, 0.5); font-weight:100; display: flex;">
+                    <span>29 April 2024</span>
+                    <div style="border-left: 1px solid rgba(255, 255, 255, 0.5); font-weight:100; height: 22px; margin: 0 10px;"></div>
+                    <span>9:30 am</span>
+                </div>
+                <div class="d-flex align-items-center mt-2">
+                    <img src="../../images/icons/icons8-inverted-commas-100.png" style="height:3rem; width:3rem;">
+                    <div class="mt-3 ml-1 quote-text" style="font-size: 1.3rem;">The best way to predict the future is to build it - Peter Drucker</div>
+                </div>
+                <div class="d-none d-md-block image-right">
+                    <img src="../../images/pc_desk_2.svg" alt="Image" class="img-fluid img-man">
+                </div>   
+            </nav>
+
+            <div class="container mt-4 ml-0 mr-0 left-container" style="width:65%; float: left;">
+                              <!-- First Row -->
+                              <div class="row">
+                                <div class="col-sm-6 col-md-3 mb-2">
+                                    <div class="d-flex flex-column align-items-center p-3" style="border-radius:20px; height: 100px; border:1px solid #7cea15; background-color: #fff;">
+                                        <img src="../../images/welcome_emp/task_box.svg" class="img-fluid" alt="Image 1">
+                                        <p class="text-center mt-2 custom-text" style="color: green; font-size:0.9rem;">Task box</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 mb-2">
+                                    <div class="d-flex flex-column align-items-center p-3" style="border-radius:20px; height: 8rem; width: 100%; border:1px solid #7cea15; background-color: #fff;">
+                                        <img src="../../images/welcome_emp/conversation.svg" class="img-fluid" alt="Image 2">
+                                        <p class="text-center mt-2 custom-text" style="color: green; font-size:0.9rem;">Recruitment</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 mb-2">
+                                    <div class="d-flex flex-column align-items-center justify-content-center p-3" style="border-radius:20px; height:100px; width: 100%; border:1px solid #7cea15; background-color: #fff;">
+                                        <img src="../../images/welcome_emp/vibe.svg" class="img-fluid" alt="Image 3">
+                                        <p class="text-center custom-text" style="color: green; font-size:0.9rem;">Vibe</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 mb-2">
+                                    <div class="d-flex flex-column align-items-center p-3" style="border-radius:20px; height: 100px; border:1px solid #7cea15; background-color: #fff;">
+                                        <img src="../../images/welcome_emp/attendance.svg" class="img-fluid" alt="Image 4">
+                                        <p class="text-center custom-text" style="color: green; font-size:0.9rem;">Attendance</p>
+                                    </div>
+                                </div>
+                            </div>            
+        
+                <!-- Second Row -->
+                <div class="row mb-2">
+                    <div class="col-sm-6 col-md-3 mb-2">
+                        <div class="d-flex flex-column align-items-center p-3" style="border-radius: 20px; height: 150px;  border:1px solid #7cea15; background-color: #fff;">
+                            <img src="../../images/welcome_emp/performance.svg" class="img-fluid mb-3" alt="Image 5">
+                            <p class="text-cente custom-textr" style="color: green; font-size:0.9rem;">Performance</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mt-1 my-auto">
+                        <div class="d-flex flex-column align-items-center p-3" style="border-radius: 20px; height: 8rem; width: 100%; max-width: 10rem; border:1px solid #7cea15; background-color: #fff;">
+                            <img src="../../images/welcome_emp/org_view.svg" class="img-fluid mb-3" alt="Image 6">
+                            <p class="text-center custom-text" style="color: green; font-size:0.9rem;">Org View</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-2">
+                        <div class="d-flex flex-column align-items-center p-3" style="border-radius: 20px; height: 150px; width: 100%; max-width: 9rem; border:1px solid #7cea15; background-color: #fff;">
+                            <img src="../../images/welcome_emp/employees.svg" class="img-fluid mb-3" alt="Image 7">
+                            <p class="text-center custom-text" style="color: green; font-size:0.9rem;">Employees</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-2">
+                        <div class="d-flex flex-column align-items-center p-3" style="border-radius: 20px; height: 150px; width: 100%; max-width: 8rem; border:1px solid #7cea15; background-color: #fff;">
+                            <img src="../../images/welcome_emp/leave.svg" class="img-fluid mb-3" alt="Image 8">
+                            <p class="text-center custom-text" style="color: green; font-size:0.9rem;">Leave</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Third Row -->
+                <div class="row mt-3">
+                    <div class="col-lg-5 col-md-4 mb-1">
+                        <div class="d-flex align-items-center p-3" style="border-radius: 15px; height: 7rem; border:1px solid #7cea15; background-color: #fff;">
+                            <img src="../../images/welcome_emp/helpdesk.svg" class="img-fluid" alt="Image 9">
+                            <p class="text-center custom-text ml-4" style="color: green; font-size:0.9rem;">Helpdesk</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 mb-1 d-flex justify-content-center">
+                        <div class="d-flex flex-column align-items-center p-3" style="border-radius: 15px; height: 7rem; max-width: 15rem; border:1px solid #7cea15; background-color: #fff;">
+                            <img src="../../images/welcome_emp/hrdocuments.svg" class="img-fluid" alt="Image 10">
+                            <p class="text-center custom-text" style="color: green; font-size:0.7rem; font-weight:600;">HR documents</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-4 mb-1">
+                        <div class="d-flex align-items-center p-3" style="border-radius: 15px; height: 7rem; border:1px solid #7cea15; background-color: #fff;">
+                            <img src="../../images/welcome_emp/calender.svg" class="img-fluid" alt="Image 11">
+                            <p class="text-center custom-text ml-4" style="color: green; font-size:0.9rem;">Calender</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-4 right-container" style="width: 35%; float: right;">
+                <!-- Content for 30% width container -->
+                <div class="border border-success p-3" style="border-radius: 20px; height: auto;">
+                    <div class="p-2 mb-2 announcements-head" style="border-radius: 10px; height: 20%;">
+                        <div class="announcements top-0 end-0 bg-success text-white px-1 rounded-bottom">
+                            <span class="quote-text" style="font-size: 0.65rem;">Announcements</span>
+                        </div>
+                        <!-- Anchor tags -->
+                        <div class="d-flex justify-content-start align-items-start right-container-in" style="height: 110%; flex-direction: column; background-color: #fff; border-radius:10px;">
+                            <a href="#" class="ml-1 mb-2 mt-2 quote-text2" id="openPolicyModal" style="color: green; text-decoration: underline; margin-right: 10px; font-size:1rem;">New Policy Announcements</a>
+                            <!--model overlay top effect-->
+                            <div class="modal-overlay" id="modalOverlay">
+                                <div class="modal-content">
+                                    <div class="container mt-4">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <img src="../../images/checklist.svg" class="img-fluid rounded" alt="Your Image">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div>
+                                                    <i class="fa-solid fa-xmark icon-top-right" id="closeIcon"></i>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p class="text-muted text-success quote-text" style="font-weight: bold;">Promotion Announcement</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p class="text-muted text-success">Dear Fellow staff,</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="mb-1 col text-muted text-success" style="font-size: 0.7rem;">
+                                                        <p class="mb-0">I am pleased to all of you that Neha Jain has been promoted to UX Design head within the comoany</p>
+                                                        <p class="mb-0">She has worked for UX products for five years and has been an invaluable member of our team during that time. She was instrumental in maintaining our fleet while also cutting costs and improving revenue.</p>
+                                                        <p class="mb-0">We are confident that she will continue this record of innovation in her new position overseeing both the equipment and personnel.</p>
+                                                        <p>For any inquiries about Neha's new position contact us.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="ml-1 pb-4 quote-text2" id="openPromotionalModal" style="color: green; text-decoration: underline; font-size:1rem;">Promotion Announcement</a>
+                        </div>
+                    </div>
+                    
+                    <div class="position-relative mb-2 pb-4" style="height: auto; border-radius: 20px; background-color: #fff;">
+                        <div class="d-flex justify-content-center align-items-center mb-4 position-relative" style="color: black; width: 100%;">
+                            <div class="mt-3 mr-1 ml-2 quote-text2" style="font-size: 1rem; font-weight: bold;">Celebrations Corner</div>
+                            <div class="mt-3  mr-1" style="border-left: 1px solid #00b050; height: 15px;"></div>
+                            <span class="mt-3 quote-text2" style="font-size: 1rem; color: #00b050;">This month</span>
+                        </div>
+
+                        <!-- New div below the second inner div -->
+                        <div class="d-flex flex-column celebrate-div">
+                            <!-- Birthdays Section -->
+                            <div class="mt-2 px-3 pt-3 justify-content-center align-items-center" style="width: 95%; background: linear-gradient(to bottom, #b8d4c5 50%, #fffff1 50%); border-radius: 20px 20px 0 0; margin: 0 auto;">
+                                <div class="text-success mt-0 quote-text2">Birthdays</div>
+                                <div class="d-flex flex-wrap justify-content-center" style="margin-top: 1rem; gap:0.8rem; font-size: 0.8rem;">
+                                    <div class="text-center" >
+                                        <img src="../../images/profile.svg" class="img-fluid" style="width: 2.5rem; height: 2.5rem; border-radius: 50%; border: 1px solid black;">
+                                        <p>Anthony</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="../../images/profile.svg" class="img-fluid" style="width: 2.5rem; height: 2.5rem; border-radius: 50%; border: 1px solid black;">
+                                        <p>Fredrick</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="../../images/profile.svg" class="img-fluid" style="width: 2.5rem; height: 2.5rem; border-radius: 50%; border: 1px solid black;">
+                                        <p>Kelvin</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="../../images/profile.svg" class="img-fluid" style="width: 2.5rem; height: 2.5rem; border-radius: 50%; border: 1px solid black;">
+                                        <p>Jessica</p>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- Work Anniversary Section -->
+                            <div class="mt-4 px-3 pt-3 justify-content-center align-items-center" style="width: 95%; background: linear-gradient(to bottom, #b8d4c5 50%, #fffff1 50%); border-radius: 20px 20px 0 0; margin: 0 auto;">
+                                <div class="text-success mt-0 quote-text2">Work Anniversary</div>
+                                <div class="d-flex flex-wrap justify-content-center" style="margin-top: 1rem; gap:0.8rem; font-size: 0.8rem;">
+                                    <div class="text-center">
+                                        <img src="../../images/profile.svg" class="img-fluid" style="width: 2.5rem; height: 2.5rem; border-radius: 50%; border: 1px solid black;">
+                                        <p>Anthony</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="../../images/profile.svg" class="img-fluid" style="width: 2.5rem; height: 2.5rem; border-radius: 50%; border: 1px solid black;">
+                                        <p>Fredrick</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="../../images/profile.svg" class="img-fluid" style="width: 2.5rem; height: 2.5rem; border-radius: 50%; border: 1px solid black;">
+                                        <p>Kelvin</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="../../images/profile.svg" class="img-fluid" style="width: 2.5rem; height: 2.5rem; border-radius: 50%; border: 1px solid black;">
+                                        <p>Jessica</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!--celebration-->
+                        
+                    </div>
+            </div> <!--content -->
+            
+        </div> <!--  container end right -->
+    </div> <!-- both -->
+</div>
+<script>
+        
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            const isOpen = dropdown.classList.contains('open');
+
+            // Close all dropdowns
+            const allDropdowns = document.querySelectorAll('.dropdown');
+            allDropdowns.forEach(dd => dd.classList.remove('open'));
+
+            // Open the clicked dropdown if it was closed
+            if (!isOpen) {
+                dropdown.classList.add('open');
+            }
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.closest('.nav-link')) {
+                const allDropdowns = document.querySelectorAll('.dropdown');
+                allDropdowns.forEach(dd => dd.classList.remove('open'));
+            }
+        }
+
+    document.getElementById('openPolicyModal').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('modalOverlay').style.display = 'flex';
+});
+
+document.getElementById('openPromotionalModal').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('modalOverlay').style.display = 'flex';
+});
+
+</script>
+</body>
+</html>
