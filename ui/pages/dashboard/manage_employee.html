@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manage employee</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/manage_employee.css" rel="stylesheet">
+</head>
+<body>
+    <div class="both d-flex">
+        <nav class="navbar-vertical">
+            <a style="color: #fff;" href="#"><img src="../../images/profile.svg" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;"></a>
+            <!-- <hr class="mt-1" style="border-top: 2px solid white; margin: 10px 0;"> -->
+            <div class="dropdown container mt-3" id="dropdown1"> 
+                <a href="#" class="nav-link d-flex justify-content-between align-items-center px-0" onclick="toggleDropdown('dropdown1')">
+                    <div class="left-content d-flex align-items-center">
+                        <img src="../../images/icons/employee.svg" alt="Masters"> Masters
+                    </div>
+                    <div class="right-content ml-auto d-flex align-items-center">
+                        <i class="fa fa-angle-down"></i>
+                    </div>
+                </a>
+                <div id="mastersSubMenu" class="dropdown-content nav-link-drop left-side right-side">
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/department.svg" alt="Masters"> <a href="#">Organization Units</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/Employee_grades.svg" alt="Masters"> <a href="#" class="display-area">Employee Grades</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/department.svg" alt="Masters"> <a href="#" class="display-area">Department</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/insurance_details.svg" alt="Masters"> <a href="#" class="display-area">Employment Type</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/submit_docs.svg" alt="Masters"> <a href="#" class="display-area">Designation</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/calender_master.svg" alt="Masters"> <a href="#" class="display-area">Calender Master</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/public_holiday.svg" alt="Masters"> <a href="#" class="display-area">Public Holiday</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown container mt-2" id="dropdown2">
+              <a href="#" class="nav-link d-flex justify-content-between align-items-center px-0" onclick="toggleDropdown('dropdown2')">
+                <div class="left-content px-0 d-flex align-items-center">
+                    <img src="../../images/icons/employee-master.svg" alt="Employee master"> Employee Master
+                </div>
+                <div class="right-content ml-auto d-flex align-items-center">
+                    <i class="right-content fa fa-angle-down"></i>
+                </div>
+              </a>
+                <div id="employeeSubMenu" class="dropdown-content nav-link-drop">
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/department.svg" alt="Masters"> <a href="#" class="display-area">Employee Details</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/bank_details.svg" alt="Masters"> <a href="#" class="display-area">Bank Details</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/insurance_details.svg" alt="Masters"> <a href="#" class="display-area">Insurance Details</a>
+                    </div>
+                    <div class="nav-link-2 d-flex align-items-center">
+                        <img src="../../images/icons/submit_docs.svg" alt="Masters"> <a href="#" class="display-area" style="width: auto;">Submitted Documents</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <nav class="navbar row">
+                <div class="col-md-7 px-3 py-1 nav-link" style="font-weight: bold; color: black; font-size:1.2rem;">Manage Employee</div>
+                <ul class="col-md-5 d-flex justify-content-end nav">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:black" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:black;" href="#"><i class="fas fa-bell"></i></a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-links" style="color: black; border: 1px solid black; border-radius: 50%;" href="#"><img src="../../images/profile.svg" alt="Profile" class="rounded-circle" style="width: 40px; height: 40px;"></a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-links" style="color:black; text-decoration: none;">Admin</a>
+                    </li>
+                    <li class="nav-items">
+                        <a class="nav-links" style="color:black; text-decoration: none;" href="#"><i class="fa fa-angle-down"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="top-navbar mt-4" style="position: relative; background-position: center 13%; height: 5rem;">
+                <div class="profile-container" style="position: absolute; left: 2rem; top: 85%; transform: translateY(-40%); display: flex; align-items: flex-end; z-index: 1;">
+                    <div class="profile-circle box-text">
+                        <a href="#" class="box-text">+</a>
+                        <a href="#" class="box-text">Browse Picture</a>
+                        <input type="file" accept="image/*" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer;">
+                    </div>
+                </div>
+                <div class="image-right d-none d-md-block" style="position: absolute; right: 10px; top: 105%; transform: translateY(-50%);">
+                    <img src="../../images/girl_laptop_1.svg" alt="Image" style="width: 15rem; height: 14rem; align-items: flex-end;">
+                </div>
+            </div>
+
+            <div class="container border border-success" style="display: flex; margin-top: 3rem; background-color: white;">
+                <div class="row">
+                    <div class="col-md-12 ml-3">
+                        <div class='font-size: 1rem; mt-4 ml-4'>Organization Information</div>
+                        <div class=" p-3 mb-3">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <!-- <label for="employeeId" class="col-form-label">Employee ID</label> -->
+                                        <input type="text" placeholder="Enter Employee ID" class="form-control box-text" id="employeeId" style="border: 1px solid green;">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Enter Joining date (dd-mm-yy)" class="form-control box-text py-3" id="dob" style="border: 1px solid green; font-size: 0.7rem;">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" style="font-size:0.7rem;  background-color: white; border: 1px solid green;">
+                                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <!-- <label for="organizationUnit" class="col-sm-4 col-form-label">Organization Unit</label> -->
+                                <div class="col-md-6">
+                                    <select class="form-control box-text" id="organizationUnit" placeholder="Select Organization Unit" style="border: 1px solid green;">
+                                        <option value="" disabled selected>Select Organization Unit</option>
+                                        <option value="unit1">Unit 1</option>
+                                        <option value="unit2">Unit 2</option>
+                                        <option value="unit3">Unit 3</option>
+                                    </select>
+                                </div>
+
+                                <!-- <label for="band" class="col-sm-4 col-form-label">Band</label> -->
+                                <div class="col-md-6">
+                                    <select class="form-control box-text" placeholder="Select Band" id="band" style="border: 1px solid green;">
+                                        <option value="" disabled selected>Select Band</option>
+                                        <option value="band1">Band 1</option>
+                                        <option value="band2">Band 2</option>
+                                        <option value="band3">Band 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                           
+                            <div class="row">
+                                <!-- <label for="designation" class="col-sm-4 col-form-label">Designation</label> -->
+                                <div class="col-md-6 mt-3">
+                                    <select class="form-control box-text" placeholder="Select Department" id="designation" style="border: 1px solid green;">
+                                        <option value="" disabled selected>Select Department</option>
+                                        <option value="designation1">Department 1</option>
+                                        <option value="designation2">Department 2</option>
+                                        <option value="designation3">Department 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 ml-4">
+                    <div class='font-size: 1rem; mt-4 ml-4'>Personal Information</div>
+                    <div class="p-3 mb-3">
+                        <div class="row">
+                                <div class="col-md-6">
+                                    <select class="form-control box-text" id="selectTitle" placeholder="Select Title" style="border: 1px solid green;">
+                                        <option value="" disabled selected>Select Title</option>
+                                        <option value="unit1">Title 1</option>
+                                        <option value="unit2">Title 2</option>
+                                        <option value="unit3">Title 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <!-- <label for="employeeId" class="col-form-label">Employee ID</label> -->
+                                        <input type="text" placeholder="Enter First Name" class="form-control box-text" id="fName" style="border: 1px solid green;">
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <!-- <label for="employeeId" class="col-form-label">Employee ID</label> -->
+                                        <input type="text" placeholder="Enter Middle Name" class="form-control box-text" id="mName" style="border: 1px solid green;">
+                                    </div>
+                                </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <!-- <label for="employeeId" class="col-form-label">Employee ID</label> -->
+                                            <input type="text" placeholder="Enter Last Name" class="form-control box-text" id="lName" style="border: 1px solid green;">
+                                        </div>
+                                    </div>
+                            </div>
+                        
+                            <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" placeholder="Enter DOB (dd-mm-yy)" class="form-control box-text py-3" id="dob" style="border: 1px solid green; font-size: 0.7rem;">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" style="font-size:0.7rem;  background-color: white; border: 1px solid green;">
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <select class="form-control box-text" id="selectGen" placeholder="Select Gender" style="border: 1px solid green;">
+                                                <option value="" disabled selected>Select Gender</option>
+                                                <option value="unit1">Male</option>
+                                                <option value="unit2">Female</option>
+                                                <option value="unit3">Others</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Enter Blood Group" class="form-control box-text" id="bloodGroup" style="border: 1px solid green;">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <select class="custom-select col-md-1 box-text" placeholder="Select Country Code box-text" id="countryCode" style="border: 1px solid green;">
+                                                <option value="+1">+1 (USA)</option>
+                                                <option value="+44">+44 (UK)</option>
+                                                <option value="+91">+91 (India)</option>
+                                                <!-- Add more options as needed -->
+                                            </select>
+                                            <input type="text" class="form-control box-text" placeholder="Enter Phone no." aria-label="Phone Number" aria-describedby="basic-addon2" style="border: 1px solid green;">
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+
+                        </div>            
+                    </div>
+                </div>
+                
+                <div class="col-md-12">
+                    <button type="submit" class="mt-3 px-5 btn rounded nav ml-auto btn-container" style="background-color: rgb(9, 39, 36); color: #fff;">Save</button>
+                </div>
+        </div>
+    </div>
+    <script>
+       function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            const isOpen = dropdown.classList.contains('open');
+
+            // Close all dropdowns
+            const allDropdowns = document.querySelectorAll('.dropdown');
+            allDropdowns.forEach(dd => dd.classList.remove('open'));
+
+            // Open the clicked dropdown if it was closed
+            if (!isOpen) {
+                dropdown.classList.add('open');
+            }
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.closest('.nav-link')) {
+                const allDropdowns = document.querySelectorAll('.dropdown');
+                allDropdowns.forEach(dd => dd.classList.remove('open'));
+            }
+        }
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
