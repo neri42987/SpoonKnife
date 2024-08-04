@@ -10,4 +10,3 @@ For some more information on how to fork a repository, [check out our guide, "Fo
 
 some change to push to remote
 
-want to know if it asks password second time
