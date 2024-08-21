@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Spoon-Knife</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #f0f0f0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    #octocat {
+      width: 150px;
+      height: auto;
+      margin-top: 20px;
+    }
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<img src="forkit.gif" id="octocat" alt="Octocat" />
+
+<!-- Feel free to change this text here -->
+<p>
+  Fork me? Fork you, @octocat!
+</p>
+
+<button onclick="displayMessage()">Click Me!</button>
+
+<script>
+  function displayMessage() {
+    alert('You clicked the button!');
+  }
+</script>
+
+<footer>
+  <p>Contact us at: <a href="mailto:info@example.com" style="color: white;">info@example.com</a></p>
+</footer>
+
+</body>
+</html>
