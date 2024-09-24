@@ -4,3 +4,5 @@ console.log("Temp 2")
 const badge = () => {
   return 'Badge'
 }
+
+console.log(badge)
