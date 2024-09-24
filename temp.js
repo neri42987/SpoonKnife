@@ -6,4 +6,4 @@ const badge = () => {
 }
 
 console.log(badge)
-alert('data')
+console.log('data')
