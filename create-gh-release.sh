@@ -21,7 +21,7 @@ git push --delete origin $TEMP_TAG
 git fetch --prune --tags
 
 # Find last stable release
-gh release list | grep alpha-stable | head -n 30| awk '{print $1}'
+gh release list | grep alpha-stable | head -n 1| awk '{print $1}'
 
 
 
