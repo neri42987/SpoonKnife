@@ -1,0 +1,36 @@
+name: Nightly Tests
+
+on:
+  workflow_dispatch:
+    inputs:
+      send-pipeline-status:
+        required: false
+        type: boolean
+        default: false
+      retry-workflow-for-network-errors:
+        required: false
+        type: boolean
+        default: true
+      dry-run:
+        required: false
+        description: "Enable dry-run"
+        type: boolean
+        default: false
+      test-branch:
+        description: "Test branch name when dry-run is enabled (can not empty)"
+        required: false
+        type: string
+        default: ""
+      alpha-tag:
+        description: "The alpha version tag"
+        required: false
+        type: string
+        default: "v0.0.0"
+
+jobs:
+  create-gh-release:
+    runs-on: az-weu-ubuntu-20.04-amd64-2cpu
+    steps:
+      - name: test Check
+        run: |
+          ./create-gh-release.sh ${{ inputs.alpha-tag }}
