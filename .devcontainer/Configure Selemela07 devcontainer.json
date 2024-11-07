@@ -1,0 +1,5 @@
+{edit,patch and differ
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+  }
+}
