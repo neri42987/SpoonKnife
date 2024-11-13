@@ -4,7 +4,7 @@ function showAlert() {
 function showConsoleMessage() {
 console.log("ce message est affiché dans la console."); 
 }
-
+var teams = [];
 function addTeam(team) {
     if (!teams.includes(team)) {
         teams.push(team);
