@@ -15,3 +15,7 @@ p {
   margin: 50px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 }
+
+/* Updated the background colour and also the header colour to blue and aqua */
+body {background-color: aquamarine;}
+h1 {color: blue}
