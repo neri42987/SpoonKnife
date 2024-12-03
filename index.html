@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Spoon-Knife</title>
   <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <style>
+    h1,
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    div {
+      width: 100px;
+      height: 360px;
+      background-color: green;
+      transition-property: all;
+      transition-duration: 1s;
+
+    }
+
+    div:hover {
+      height: 200px;
+      width: 200px;
+    }
+  </style>
 </head>
 
 <body>
 
-<img src="forkit.gif" id="octocat" alt="" />
+  <img src="forkit.gif" id="octocat" alt="" />
 
-<!-- Feel free to change this text here -->
-<p>
-  Fork me? Fork you, @octocat!
-</p>
+  <!-- Feel free to change this text here -->
+  <p>
+    Fork me? Fork you, @octocat!
+  </p>
+  <div></div>
 
 </body>
+
 </html>
