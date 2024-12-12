@@ -9,7 +9,12 @@
   margin: 50px auto;
 }
 
+h1 {
+  color: blue;  
+}
+
 p {
+  color: red;
   display: block;
   width: 400px;
   margin: 50px auto;
