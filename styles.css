@@ -1,5 +1,5 @@
 * {
-  margin:0px;
+  margin:20px;
   padding:0px;
 }
 
@@ -12,6 +12,7 @@
 p {
   display: block;
   width: 400px;
+  color: red;
   margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  font: 30px Monaco,"Courier New","DejaVu Sans Mono",monospace;
 }
